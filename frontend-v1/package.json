@@ -1,0 +1,41 @@
+{
+	"name": "aggChain-fe",
+	"version": "2.0.8",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"clean": "rm dist",
+		"build": "webpack --mode production --config ./config/prod.config.js",
+		"build:analyzer": "webpack --mode production --config ./config/analyzer.config.js",
+		"start": "webpack-dev-server --config ./config/dev.config.js --hot --mode development"
+	},
+	"dependencies": {
+		"@sentry/webpack-plugin": "^1.18.8",
+		"@types/react-dom": "^17.0.11",
+		"@types/react-router-config": "^5.0.6",
+		"@types/react-router-dom": "^5.3.3",
+		"@web3-react/core": "^6.1.9",
+		"@web3-react/injected-connector": "^6.0.7",
+		"@zblock/north": "^1.0.1",
+		"antd": "^4.20.2",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^6.6.0",
+		"esbuild-loader": "^2.18.0",
+		"ethers": "^5.6.4",
+		"html-webpack-plugin": "^5.5.0",
+		"less": "^4.1.2",
+		"less-loader": "^10.2.0",
+		"mini-css-extract-plugin": "^2.5.3",
+		"react": "^17.0.2",
+		"react-combine-reducers": "^1.1.1",
+		"react-dom": "^17.0.2",
+		"react-router-config": "^5.1.1",
+		"react-router-dom": "^5.2.1",
+		"react-web3": "^1.2.0",
+		"use-debounce": "^8.0.3",
+		"webpack": "^5.69.1",
+		"webpack-bundle-analyzer": "^4.5.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.7.4"
+	}
+}

@@ -1,0 +1,101 @@
+@import '../../../../gobal.less';
+
+.swap-input {
+  &-wrapper{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    padding-bottom: 13px;
+    border-radius: 24px;
+    background-color: #1E1E1E;
+    font-family: Roboto,serif;
+  }
+
+  &-header {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #78798B;
+  }
+
+  &-title {
+    cursor: pointer;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    &-right {
+      display: flex;
+      align-items: center;
+      background-color: #2B2B2B;
+      box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      border-radius: 22px;
+      outline: none;
+      user-select: none;
+      border: none;
+      font-weight: 500;
+      height: 44px;
+      padding: 0px 8px;
+      justify-content: space-between;
+      margin-left: 12px;
+      visibility: visible;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 33px;
+        width: 33px;
+        border-radius: 50%;
+        background-color: @btn-bg-color-03;
+      }
+
+      &-symbol {
+        margin: 0 7px 0 10px;
+        font-size: 18px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: #8C8DA2;
+        font-family: 'Poppins-Medium';
+      }
+
+      &-down {
+        color: #8C8DA2;
+        width: 11px;
+        height: 7px;
+      }
+    }
+
+    &-input {
+      border: none;
+      background:none;  
+      outline:none;
+      height: 2.5rem;
+      width: 100%;
+      color: white;
+      font-size: 30px;
+      font-family: PT Mono;
+      font-weight: bold;
+      color: #B2B3CD;
+      // width: 200px;
+    }
+  }
+}
+
+.swap-input-content-input:focus {
+  border: none;
+}
+
+.swap-input-wrapper:hover {
+  outline: 1px solid #383838;
+}

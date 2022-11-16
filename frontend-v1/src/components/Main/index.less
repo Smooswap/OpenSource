@@ -1,0 +1,138 @@
+@import '../../gobal.less';
+
+.main {
+  &-wrapper {
+    display: block;
+    margin: 0 auto;
+    width: @content-wrapper-width;
+    border-radius: @wrap-border-radius;
+    padding: @wrap-border-padding;
+    // box-shadow: @box-shadow;
+    max-width: 100%;
+    margin-top: 16px;
+    position: relative;
+    background: @bg-color-1;
+  }
+}
+
+.swap-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -16px auto;
+  width: 42px;
+  height: 42px;
+  background: #2B2B2B;
+  border: 2px solid #09090A;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+}
+
+.swap-btn {
+  width: 10px;
+  height: 16px;
+  cursor: pointer;
+}
+
+// .swap-btn:hover {
+//   transform:rotate(180deg);
+// }
+
+
+.swap {
+  &-sketch-route-wrapper {
+    margin-top: 10px;
+    padding: 12px 12px;
+    background-color: #1E1E26;
+    border-radius: 12px;
+    padding-top: 1px;
+
+    &-item {
+      // todo: handle more item
+      margin-top: 12px;
+      border-radius: 12px;
+      padding: 22px 10px 12px;
+      // padding-bottom: 22px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    &-primary {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 71px;
+      height: 18px;
+      background: #68E261;
+      border-radius: 9px;
+      font-size: 12px;
+      font-family: Poppins;
+      font-weight: 400;
+      color: #0B0B10;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    &-bottom,
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+
+      &-left {
+        display: flex;
+      }
+    }
+
+    &-icon {
+      border: 1px solid rgba(151, 151, 151, 0.254316);
+      border-radius: 16px;
+      margin-right: 3px;
+      display: flex;
+      align-items: center;
+      padding: 1px 6px;
+
+      &-img {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+    }
+
+    &-chainName {
+      font-family: 'Poppins-Medium';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      color: #FFFFFF;
+    }
+
+    &-desAmount {
+      font-family: 'Poppins-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+
+    &-bottom {
+      font-family: 'Poppins-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+
+      color: #78798C;
+    }
+
+    &-select {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

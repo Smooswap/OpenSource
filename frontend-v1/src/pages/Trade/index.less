@@ -1,0 +1,36 @@
+@import '../../gobal.less';
+
+.bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  width: 200vw;
+  height: 200vh;
+  transform: translate(-50vw, -100vh);
+  background: #1b1d1f;
+
+  &-green {
+    background-color: #3fff00;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    filter: blur(400px);
+    opacity: .2;
+    left: 50%;
+    top: 100px;
+    margin-left: -350px;
+  }
+}
+
+.main-loading {
+  width: @content-wrapper-width !important;
+}
+
+.main {
+  padding-bottom: 40px;
+}

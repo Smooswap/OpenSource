@@ -1,0 +1,104 @@
+@import '../../../../gobal.less';
+
+.setting-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:@bg-color-1;
+  z-index: 100;
+  border-radius: @wrap-border-radius;
+  padding: @wrap-border-padding;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    &-left {
+      display: flex;
+      align-items: center;
+    }
+
+    &-title {
+      margin-left: 8px;
+      font-family: 'Poppins-Medium';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+
+  &-content {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+
+    > div {
+      margin-top: 35px;
+    }
+
+    &-gas {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-value {
+        color: #8C8DA2;
+        font-weight: 400;
+      }
+    }
+
+    &-fee {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-time {
+      &-content {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .ant-slider-track {
+        background: #68E261 !important;
+      }
+
+      .ant-slider-handle {
+        border-color: #68E261 !important;
+      }
+    }
+  }
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+  background-color: #68E261 !important;
+  display: none !important;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+  background-color: #68E261 !important;
+  display: none !important;
+}
+
+.ant-radio-button-wrapper:not(:first-child)::before {
+  display: none !important;
+}
+
+.setting-wrapper-header-reset:hover {
+  color: #68E261 !important;
+  border-color: #68E261 !important;
+}

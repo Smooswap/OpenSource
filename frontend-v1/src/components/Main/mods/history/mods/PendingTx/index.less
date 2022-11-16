@@ -1,0 +1,77 @@
+@import "../../../../../../gobal.less";
+
+.history-pendingTx {
+  &-content {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #ECF0F9;
+    font-family: Roboto,serif;
+    margin-top: 10px;
+  }
+
+  &-path {
+    width: 70%;
+    margin: 15px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-control {
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+  }
+
+  &-swap {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-hr {
+    transform: scaleY(.5);
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  &-token {
+    font-size: 24px;
+    font-weight: 900;
+    color: @text-color-link;
+    cursor: pointer;
+  }
+
+  &-value {
+    position: absolute;
+    margin-top: -10px;
+    font-size: 12px;
+    color: lightcoral;
+  }
+
+  &-info {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  &-tags {
+    display: flex;
+    align-items: center;
+  }
+
+  &-name {
+    font-size: 12px;
+    color: @text-color-01;
+  }
+
+  &-title {
+    color: @text-color-01;
+    font-size: 24px;
+  }
+}

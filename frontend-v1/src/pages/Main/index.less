@@ -1,0 +1,98 @@
+.home {
+  &-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+
+
+    &-left {
+      margin-left: 56px;
+    }
+
+    &-logo {
+      height: 40px;
+      cursor: pointer;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: space-around;
+      width: 320px;
+      margin-right: 106px;
+    }
+
+    &-path-select,
+    &-path-unselect {
+      font-size: 14px;
+      font-family: OpenSans;
+      color: #9B9B9B;
+      line-height: 19px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: transform .3s;
+    }
+
+    &-path-select {
+      color: #23EAA4;
+    }
+  }
+
+  &-content {
+    margin-top: 210px;
+    margin-left: 220px;
+
+    &-title {
+      font-size: 48px;
+      font-family: Futura-Bold, Futura;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 63px;
+      letter-spacing: 4px;
+    }
+
+    &-desc {
+      width: 925px;
+      font-size: 24px;
+      font-family: Futura-Medium, Futura;
+      font-weight: 500;
+      color: #CFCFCF;
+      line-height: 32px;
+      letter-spacing: 2px;
+    }
+
+    &-trader {
+      margin-top: 51px;
+      font-size: 16px;
+      font-family: Futura-Bold, Futura;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 25px;
+      letter-spacing: 1px;
+      text-align: center;
+      width: 171px;
+      height: 46px;
+      line-height: 46px;
+      border: 1px solid #23EAA4;
+      cursor: pointer;
+      transition: color 1s ,transform .3s;
+    }
+  }  
+}
+
+.home-header-path-unselect:hover {
+  color: #23EAA4;
+  transform: scale(1.2);
+}
+
+.home-content-trader:hover {
+  color: #23EAA4;
+  transform: scale(1.2);
+}

@@ -1,0 +1,421 @@
+@import '../../gobal.less';
+
+
+.header {
+
+  &-menu {
+    .ant-dropdown-menu-item-group-title {
+      font-size: 14px;
+      font-family: 'Poppins-medium';
+      font-weight: 500;
+      color: #FFFFFF !important;
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+    .ant-modal {
+      background-color: #131516 !important;
+    }
+    .ant-dropdown-menu-item-active {
+      background: #131516 !important;
+      border-radius: 6px;
+      height: 36px;
+    }
+    
+    .ant-dropdown-menu-item {
+      height: 36px;
+    }
+
+    .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+      padding: 5px 3px !important;
+    }
+
+    .ant-dropdown-menu-item-group-list {
+      margin: 0px !important;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px 0;
+    // background-color: @trade-header-bg;
+    // // padding: 16px 0;
+    height: @trade-header-height;
+    margin-top: 19px;
+
+    &-controls {
+      display: flex;
+      align-items: center;
+    }
+
+    &-nodeSet {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      margin-right: 12px;
+      cursor: pointer;
+
+      img {
+        width: 16px;
+      }
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-family: 'Poppins-Medium';
+      font-size: 14px;
+      font-weight: 400;
+      &-logo {
+        width: 168px;
+        height: 24px;
+      }
+
+      &-list {
+        display: flex;
+        font-size: 14px;
+        font-family: 'Poppins-Medium';
+        font-weight: 500;
+        color: white;
+
+        > div {
+          padding: 0 12px;
+          cursor: pointer;
+          height: @trade-header-height;
+          line-height: @trade-header-height;
+          
+        }
+      }
+    }
+  }
+  &-icon {
+    width: 24px;
+    display: block;
+    margin: 5px;
+
+    &-right {
+      display: flex;
+      align-items: center;
+
+      > div {
+        margin-right: 5px;
+      }
+    }
+
+    &-label {
+      margin-left: 0px;
+      // color: white;
+      // background-color: black;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Poppins-Medium',
+      }
+    }
+
+    &-angel {
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background: #05C380;
+      margin-right: 6px;
+    }
+  }
+
+  &-btn {
+    width: auto;
+    background-color: @trade-header-bg !important;
+    font-size: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 2px !important;
+    &-icon {
+      width: 18px;
+      height: 15px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  &-connect {
+    margin: 0 10px;
+    border: none !important;
+
+    &-icon {
+      width: 16px;
+      margin-right: 8px;
+      margin-top: -5px;
+      
+    }
+
+    &-loading {
+      font-size: 16px;
+      font-family: Poppins;
+      font-weight: 500;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      margin-top: 10px;
+
+      &-text {
+        margin-top: 21px;
+      }
+    }
+
+    &-wrapper {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 6px;
+      color: white;
+      font-size: 14px;
+      font-family: 'Poppins-Medium';
+      font-weight: 500;
+      height: 36px;
+      cursor: pointer;
+      background: #000000;
+      border-radius: 6px;
+      height: 36px;
+
+      &-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 3px;
+      }
+    }
+
+    &-balance {
+      margin-right: 12px;
+      line-height: 36px;
+    }
+
+    &-account {
+      padding: 0 15px;
+      background-color: #1E1E26;
+      border-radius: 6px;
+      line-height: 28px;
+    }
+
+    &-modal {
+      background-color: #131516;
+      padding-bottom: 0px !important;
+      border: 1px solid #303336;
+      .ant-modal-footer,
+      .ant-modal-header {
+        background-color: #131516;
+        border: none;
+        border-radius: 24px;
+      }
+      .ant-modal-close,
+      .ant-modal-title {
+        color: white;
+        font-size: 18px;
+        font-family: 'Poppins-Medium';
+        font-weight: 500;
+      }
+      .ant-modal-content {
+        background-color: unset;
+        box-shadow: unset !important;
+      }
+
+      &-footer {
+        background-color: #131516;
+        padding-right: 32px;
+      }
+    }
+
+    &-wallet {
+      // margin: 0 24px;
+      // padding: 0 24px;
+      margin-top: -10px;
+      padding: 0 20px;
+      height: 54px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2F3137;
+      border: 1px solid #303336;
+      border-radius: 14px;
+      font-size: 16px;
+      font-family: 'Poppins-Medium';
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+
+      &-icon {
+        width: 24px;
+      }
+
+      &-wrapper {
+        width: 448px !important;
+        border-radius: 24px;
+        font-size: 14px;
+        font-family: 'Poppins-Medium';
+        height: 229px;
+      }
+    }
+  }
+
+  &-nodes-wrapper {
+    margin: 0 12px;
+    padding: 0 16px;
+    height: 62px;
+    display: flex;
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 16px;
+    }
+
+    &-name {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    &-length {
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    &-angel {
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background: #05C380;
+      margin-right: 6px;
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-account-wrapper {
+    width: 448px !important;
+    height: 210px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-family: 'Poppins-Medium';
+
+    &-content {
+      margin: 0 auto;
+      width: 408px;
+      height: 125px;
+      border: 2px solid #303336;
+      border-radius: 12px;
+
+      &-balance {
+        font-size: 20px;
+        color: white;
+        margin-left: 19px;
+        font-weight: 600;
+        // margin-top: 5px;
+
+        &-title {
+          font-size: 15px;
+          color: white;
+          margin-left: 19px;
+          margin-top: 5px;
+          font-weight: 500;
+        }
+      }
+
+      &-header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-right,
+        &-left {
+          display: flex;
+          align-items: center;
+          img {
+            width: 19px;
+            height: 19px;
+            cursor: pointer;
+          }
+          &-account {
+            width: 145px;
+            height: 34px;
+            background: #000000;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 18px;
+              height: 18px;
+              border-radius: 18px;
+              margin-right: 9px;
+            }
+            div {
+              font-weight: 600;
+              color: white;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.unsupport-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 720px;
+  height: 48px;
+  top: 0;
+  left: 0;
+
+  &-icon { 
+    width: 21px;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  &-left {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+
+  &-btn {
+    position: absolute;
+    right: 0;
+  }
+}
+
+// .header-wrapper-left-list > div:hover {
+//   background: black;
+//   border-bottom: 2px solid #05C380;
+// }
+
+.header-wrapper-nodeSet:hover {
+  background-color: #68E261;
+}
+
+.smoo-close-btn {
+  width: 15px;
+  height: 15px;
+}

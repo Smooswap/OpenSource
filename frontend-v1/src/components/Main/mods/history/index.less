@@ -1,0 +1,32 @@
+.history {
+  &-wrapper {
+    width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    overflow-y: scroll;
+    position: relative;
+
+    &-title {
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Poppins-Medium';
+      font-weight: bold;
+      margin-bottom: -32px;
+    }
+
+    &-reload {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+    }
+  }
+}
+
+.history-smoo {
+  position: relative;
+}
+
+.history-wrapper::-webkit-scrollbar {
+  display: none;
+}

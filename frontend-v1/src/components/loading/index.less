@@ -1,0 +1,39 @@
+.loading {
+  &-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+
+  &-content {
+    width: 1000px;
+  }
+
+  &-gif {
+    width: 100%;
+  }
+
+  &-text {
+    font-size: 12px;
+    font-family: 'Roboto';
+    color: rgb(108, 134, 173);
+    text-align: center;
+    position: relative;
+    top: -250px;
+    animation: 5s linear out;
+    // margin-top: -200px;
+  }
+}
+
+@keyframes out {
+  from {
+    font-size: 20px;
+  }
+
+  to {
+    font-size: 12px;
+  }
+}
